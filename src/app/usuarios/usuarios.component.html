@@ -1,0 +1,16 @@
+<hr />
+<h2>Alertas y botones</h2>
+<p *ngFor = 'let user of users'>
+  {{user}}<button (click)="hello()">saludar</button>
+</p>
+
+<hr/>
+
+<h2>eliminar el usuario</h2>
+<!--el usuario que recibimos en user se lo pasamos al metodo delete() 
+  para poder eliminarlo-->
+<p *ngFor = 'let user of users'>
+  {{user}}<button (click)="delete(user)">Delete</button>
+</p>
+
+
